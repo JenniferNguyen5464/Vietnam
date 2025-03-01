@@ -1,0 +1,82 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  /* 3. Set a consistent font-family */
+  * {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* 4. Remove outlines on focus for accessibility */
+  *:focus {
+    outline: none;
+  }
+  
+  /* 5. Remove text decoration on links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 6. Remove default list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* 7. Ensure full height of html and body */
+  html, body {
+    height: 100%;
+    line-height: 1.5; /* Add accessible line-height */
+    -webkit-font-smoothing: antialiased; /* Improve text rendering */
+    background-color: #fff; /* Add a consistent background color */
+  }
+  
+  /* 8. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 9. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+  }
+  
+  /* 10. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 11. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /* 12. Normalize table styles */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  th, td {
+    padding: 0;
+    text-align: left;
+  }
+  
+  /* 13. Create a root stacking context */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
